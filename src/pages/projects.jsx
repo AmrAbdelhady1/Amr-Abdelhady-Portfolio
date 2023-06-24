@@ -103,8 +103,8 @@ const projects = () => {
               type="Portfolio Website"
               title="React Portfolio Website"
               img={portfolio}
-              link="https://ecom.io/"
-              github="https://ecom.io/"
+              link="https://amr-abdelhady-portfolio.vercel.app/"
+              github="https://github.com/AmrAbdelhady1/Amr-Abdelhady-Portfolio"
             />
           </div>
         </div>
