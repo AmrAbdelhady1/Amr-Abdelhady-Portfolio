@@ -15,10 +15,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                 transition={{ duration: 0.5, type: "spring" }}
             >
                 <h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink}
-                    className='text-primary capitalize'
+                    className='text-primary dark:text-primaryDark capitalize'
                     target='_blank'
                 >@{company}</a></h3>
-                <span className='capitalize font-medium text-dark/75'>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                     {time} | {address}
                 </span>
                 <p className='font-medium w-full'>
@@ -42,7 +42,7 @@ const Experience = () => {
 
             <div ref={ref} className='w-[75%] mx-auto relative'>
                 <motion.div
-                    className='absolute left-9 top-0 w-1 h-full bg-dark origin-top'
+                    className='absolute left-9 top-0 w-1 h-full bg-dark dark:bg-light origin-top'
                     style={{ scaleY: scrollYProgress }}
                 />
                 <ul className='w-full flex flex-col items-start justify-between ml-16'>

@@ -2,8 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './logo'
 import { useRouter } from 'next/router'
-import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from './icons'
+import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from './icons'
 import { motion } from 'framer-motion'
+import UseThemeSwitcher from './hooks/usethemeswitcher'
+import { useStateContext } from '@/context/statecontext'
 
 const CustomeLink = ({ href, title, className }) => {
   const router = useRouter();
@@ -11,7 +13,7 @@ const CustomeLink = ({ href, title, className }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
 
-      <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+      <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
         ${router.asPath === href ? 'w-full' : 'w-0'}
       `}>
         &nbsp;</span>
@@ -20,8 +22,11 @@ const CustomeLink = ({ href, title, className }) => {
 }
 
 const Navbar = () => {
+  const { setModeTheme } = useStateContext();
+  const [mode, setMode] = UseThemeSwitcher();
+
   return (
-    <div className='px-32 py-10 flex items-center justify-between font-medium w-full'>
+    <div className='px-32 py-10 flex items-center justify-between font-medium w-full dark:text-light'>
 
       <nav>
         <CustomeLink href={"/"} title={"Home"} className={"mr-4"} />
@@ -52,7 +57,7 @@ const Navbar = () => {
           <TwitterIcon />
         </motion.a>
 
-        <motion.a href="/" target="_blank" className='w-6'aria-label="Read more about Seminole tax hike"
+        <motion.a href="/" target="_blank" className='w-6' aria-label="Read more about Seminole tax hike"
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -65,6 +70,18 @@ const Navbar = () => {
         >
           <DribbbleIcon />
         </motion.a>
+
+        <button onClick={() => {
+          setMode(mode === "light" ? "dark" : "light");
+          setModeTheme(mode === "light" ? "dark" : "light");
+        }}
+        className='p-1 flex items-center justify-center rounded-full bg-dark text-light dark:bg-light dark:text-dark'
+        >
+          {mode === "dark" ?
+            <SunIcon className={"fill-dark"} /> :
+            <MoonIcon className={"fill-dark"} />
+          }
+        </button>
 
       </nav>
 

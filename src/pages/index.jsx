@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 export default function Home() {
   
   return (
-    <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
+    <main className={`${montserrat.variable} font-mont w-full min-h-screen text-dark dark:text-light`}>
       <TransitionEffect />
       <div className='flex items-center justify-center w-full'>
         <div className='w-1/2'>
@@ -33,12 +33,14 @@ export default function Home() {
           <div className='flex items-center self-start mt-2'>
             <Link href={"https://drive.google.com/file/d/1VCOt5MbseVxhT9aT_fRCGQm8EzHDm75z/view?usp=drive_link"} download={true} target={"_blank"}
               className='flex items-center bg-dark hover:bg-light text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark
-                border-2 border-solid border-transparent hover:border-dark'
+                border-2 border-solid border-transparent hover:border-dark
+                dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light
+                '
             >
               Resume <LinkArrow className={"w-6 ml-1"} />
             </Link>
             <Link href={"https://wa.me/201113761670"} target={"_blank"}
-              className='ml-4 underline text-lg font-medium capitalize text-dark'
+              className='ml-4 underline text-lg font-medium capitalize'
             >
               Contact
             </Link>

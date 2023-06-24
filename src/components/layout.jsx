@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
     url: "https://amr-abdelhady-portfolio.vercel.app/",
   };
   return (
-    <div className={`w-full h-full inline-block z-0 bg-light ${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
+    <div className={`w-full h-full inline-block z-0 bg-light dark:bg-dark dark:text-light ${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
       <Head>
         <link rel="icon" href="/logo.png" />
         <title>{Home.title}</title>
