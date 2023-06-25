@@ -31,7 +31,7 @@ export default function Home() {
             As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
             Explore my latest projects, showcasing my expertise in React.js and web development.</p>
           <div className='flex items-center self-start mt-2'>
-            <Link href={"https://drive.google.com/file/d/1VCOt5MbseVxhT9aT_fRCGQm8EzHDm75z/view?usp=drive_link"} download={true} target={"_blank"}
+            <Link href={"https://drive.google.com/file/d/1LfmCNPfQn_-cGIYu6FifdHD5cHp5a0E-/view"} download={true} target={"_blank"}
               className='flex items-center bg-dark hover:bg-light text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light

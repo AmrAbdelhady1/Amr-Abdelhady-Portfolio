@@ -9,7 +9,7 @@ const Footer = () => {
                 Build With
                 <span className='text-primary dark:text-primaryDark text-2xl px-1'>&#9825;</span>
                 by&nbsp;
-                <Link href="https://www.linkedin.com/in/amr-abdelhady-a35216184/" target='_blank' className='underline underline-offset-2'>Amr Abdelhady</Link>
+                <Link href="mailto:amrabdelhady99@gmail.com" className='underline underline-offset-2'>Amr Abdelhady</Link>
             </div>
             <Link href="https://www.linkedin.com/in/amr-abdelhady-a35216184/" target='_blank' className='underline underline-offset-2'>Say Hello</Link>
         </div>

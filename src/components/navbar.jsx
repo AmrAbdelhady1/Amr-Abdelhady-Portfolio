@@ -50,14 +50,14 @@ const Navbar = () => {
           <GithubIcon />
         </motion.a>
 
-        <motion.a href="/" target="_blank" className='w-6' aria-label="Read more about Seminole tax hike"
+        <motion.a href="https://twitter.com/amrabdelhady2" target="_blank" className='w-6' aria-label="Read more about Seminole tax hike"
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
         >
           <TwitterIcon />
         </motion.a>
 
-        <motion.a href="/" target="_blank" className='w-6' aria-label="Read more about Seminole tax hike"
+        <motion.a href="https://www.pinterest.com/aabdelhady0604/" target="_blank" className='w-6' aria-label="Read more about Seminole tax hike"
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
         >
