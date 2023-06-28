@@ -62,7 +62,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className='col-span-3 relative h-max rounded-2xl border-2 border-dark bg-light dark:bg-dark dark:border-light p-8'>
+          <div className='col-span-3 relative h-max rounded-2xl border-2 border-dark bg-light dark:bg-dark dark:border-light p-8 shadow-box'>
             {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' /> */}
             <Image src={profilePic} alt="amr-abdelhady" className='w-full h-auto rounded-2xl'
               priority
