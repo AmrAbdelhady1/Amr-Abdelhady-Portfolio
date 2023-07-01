@@ -13,9 +13,11 @@ import { useStateContext } from '@/context/statecontext'
 
 const FramerImage = motion(Image);
 
-const FeatureProject = ({ type, title, summary, img, link, github }) => {
+const FeatureProject = ({ type, title, summary, img, link, github, mode }) => {
   return (
-    <article className='w-full flex items-center justify-between rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12 relative shadow-box'>
+    <article className={`w-full flex items-center justify-between rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12
+     relative ${mode === "dark" ? "shadow-box-light" : "shadow-box"}
+     `}>
 
       {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' /> */}
 
@@ -51,9 +53,11 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
   )
 }
 
-const Project = ({ type, title, img, link, github }) => {
+const Project = ({ type, title, img, link, github, mode }) => {
   return (
-    <article className='w-full flex flex-col gap-4 items-center justify-center rounded-2xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-6 relative shadow-box'>
+    <article className={`w-full flex flex-col gap-4 items-center justify-center rounded-2xl border border-dark dark:border-light bg-light dark:bg-dark
+     shadow-2xl p-6 relative ${mode === "dark" ? "shadow-box-light" : "shadow-box"}
+     `}>
 
       <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
         <FramerImage src={img} alt={title} className='w-full h-auto'
@@ -101,6 +105,7 @@ const Projects = () => {
               img={ecom}
               link="https://ecom.io/"
               github="https://ecom.io/"
+              mode={mode}
             />
           </div>
           <div className='col-span-6'>
@@ -110,6 +115,7 @@ const Projects = () => {
               img={mode === "dark" ? portfolioLight : portfolio}
               link="https://amr-abdelhady-portfolio.vercel.app/"
               github="https://github.com/AmrAbdelhady1/Amr-Abdelhady-Portfolio"
+              mode={mode}
             />
           </div>
         </div>
