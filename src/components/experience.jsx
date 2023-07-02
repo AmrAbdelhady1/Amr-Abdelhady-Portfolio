@@ -7,14 +7,14 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null);
 
     return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[100%] pl-16 md:w-[60%] md:pl-0 mx-auto flex flex-col items-center justify-between'>
             <Lilcon reference={ref} />
             <motion.div
                 initial={{ y: 50 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, type: "spring" }}
             >
-                <h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink}
+                <h3 className='capitalize font-bold text-base md:text-xl lg:text-2xl'>{position}&nbsp;<a href={companyLink}
                     className='text-primary dark:text-primaryDark capitalize'
                     target='_blank'
                 >@{company}</a></h3>
@@ -38,14 +38,14 @@ const Experience = () => {
 
     return (
         <div className='my-64'>
-            <h2 className='font-bold text-8xl mb-32 w-full text-center'>Experience</h2>
+            <h2 className='font-bold text-3xl md:text-4xl lg:text-8xl mb-32 w-full text-center'>Experience</h2>
 
-            <div ref={ref} className='w-[75%] mx-auto relative'>
+            <div ref={ref} className='w-[100%] md:w-[85%] lg:w-[75%] mx-auto relative'>
                 <motion.div
                     className='absolute left-9 top-0 w-1 h-full bg-dark dark:bg-light origin-top'
                     style={{ scaleY: scrollYProgress }}
                 />
-                <ul className='w-full flex flex-col items-start justify-between ml-16'>
+                <ul className='w-full flex flex-col items-start justify-between ml-3 md:ml-16'>
                     <Details
                         position="Software Developer"
                         company="CryptDev"

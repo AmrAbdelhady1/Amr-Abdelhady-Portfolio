@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
       <header>
         <Navbar />
       </header>
-      <main className='px-32'>
+      <main className='xl:px-32 lg:px-16 md:px-12 px-8'>
         {children}
       </main>
       <footer>

@@ -45,9 +45,9 @@ const About = () => {
       </Head>
       <TransitionEffect />
       <main className='flex w-full flex-col items-center justify-center py-32'>
-        <Animatedtext text={"Passion Fuels Purpose!"} className='mb-16' />
-        <div className='grid w-full grid-cols-8 gap-16'>
-          <div className='col-span-3 flex flex-col items-start justify-start font-medium'>
+        <Animatedtext text={"Passion Fuels Purpose!"} className='mb-16 !text-3xl md:!text-4xl lg:!text-8xl' />
+        <div className='grid w-full lg:grid-cols-8 gap-16'>
+          <div className='xl:col-span-3 order-2 lg:order-1 lg:col-span-4 md:col-span-8 col-span-5 flex flex-col items-start justify-start font-medium'>
             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
             <p>
               Hi, I'm <span className='font-bold'>Amr Abdelhady</span>, a web developer with a passion for creating beautiful, functional,
@@ -65,7 +65,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className={`col-span-3 relative h-max rounded-2xl border-2 border-dark bg-light dark:bg-dark dark:border-light p-8
+          <div className={`xl:col-span-3 order-1 lg:order-2 lg:col-span-4 md:col-span-8 col-span-5 relative h-max rounded-2xl border-2 border-dark bg-light dark:bg-dark dark:border-light p-8
            ${mode === "dark" ? "shadow-box-light" : "shadow-box"}
            `}>
             {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' /> */}
@@ -74,28 +74,28 @@ const About = () => {
               sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw' />
           </div>
 
-          <div className='col-span-2 flex flex-col items-end justify-between'>
+          <div className='xl:col-span-2 order-3 md:col-span-8 col-span-5 flex-row flex xl:flex-col xl:items-end items-center justify-between'>
             <div className='flex flex-col items-end justify-center'>
-              <span className='inline-block text-7xl font-bold'>
+              <span className='inline-block text-2xl md:text-5xl lg:text-7xl font-bold'>
                 <AnimatedNumbers value={3} />+
               </span>
-              <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>
+              <h2 className='text-sm md:text-lg font-medium capitalize text-dark/75 dark:text-light/75'>
                 satisfied clients
               </h2>
             </div>
             <div className='flex flex-col items-end justify-center'>
-              <span className='inline-block text-7xl font-bold'>
+              <span className='inline-block text-2xl md:text-5xl lg:text-7xl font-bold'>
                 <AnimatedNumbers value={2} />+
               </span>
-              <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>
+              <h2 className='text-sm md:text-lg font-medium capitalize text-dark/75 dark:text-light/75'>
                 projects completed
               </h2>
             </div>
             <div className='flex flex-col items-end justify-center'>
-              <span className='inline-block text-7xl font-bold'>
+              <span className='inline-block text-2xl md:text-5xl lg:text-7xl font-bold'>
                 <AnimatedNumbers value={1} />+
               </span>
-              <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>
+              <h2 className='text-sm md:text-lg font-medium capitalize text-dark/75 dark:text-light/75'>
                 years of experience
               </h2>
             </div>

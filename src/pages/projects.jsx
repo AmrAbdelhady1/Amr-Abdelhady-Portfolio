@@ -15,8 +15,9 @@ const FramerImage = motion(Image);
 
 const FeatureProject = ({ type, title, summary, img, link, github, mode }) => {
   return (
-    <article className={`w-full flex items-center justify-between rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12
+    <article className={`w-full flex flex-col justify-between rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl lg:p-12
      relative ${mode === "dark" ? "shadow-box-light" : "shadow-box"}
+     lg:flex-row p-6
      `}>
 
       {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' /> */}
@@ -37,7 +38,7 @@ const FeatureProject = ({ type, title, summary, img, link, github, mode }) => {
           <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
         </Link>
 
-        <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
+        <p className='my-2 hidden lg:inline-block font-medium text-dark dark:text-light'>{summary}</p>
 
         <div className='mt-2 flex items-center'>
 
@@ -93,9 +94,9 @@ const Projects = () => {
       </Head>
       <TransitionEffect />
       <main className='w-full mb-40 flex flex-col items-center justify-center pt-20'>
-        <Animatedtext text="Imagination Trumps Knowledge!" />
-        <div className='grid grid-cols-12 gap-24 gap-y-32 mt-20'>
-          <div className='col-span-12'>
+        <Animatedtext text="Imagination Trumps Knowledge!" className='!text-3xl md:!text-4xl lg:!text-8xl' />
+        <div className='grid lg:grid-cols-12 grid-cols-1 gap-24 gap-y-32 mt-20'>
+          <div className='lg:col-span-12 hidden lg:inline-block'>
             <FeatureProject
               type="E-commerce Platform"
               title="Ecom Store"
@@ -108,7 +109,17 @@ const Projects = () => {
               mode={mode}
             />
           </div>
-          <div className='col-span-6'>
+          <div className='lg:col-span-12 lg:hidden'>
+            <Project
+              type="E-commerce Platform"
+              title="Ecom Store"
+              img={ecom}
+              link="https://ecom.io/"
+              github="https://ecom.io/"
+              mode={mode}
+            />
+          </div>
+          <div className='lg:col-span-6'>
             <Project
               type="Portfolio Website"
               title="React Portfolio Website"
