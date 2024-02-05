@@ -77,7 +77,7 @@ const About = () => {
           <div className='xl:col-span-2 order-3 md:col-span-8 col-span-5 flex-row flex xl:flex-col xl:items-end items-center justify-between'>
             <div className='flex flex-col items-end justify-center'>
               <span className='inline-block text-2xl md:text-5xl lg:text-7xl font-bold'>
-                <AnimatedNumbers value={3} />+
+                <AnimatedNumbers value={7} />+
               </span>
               <h2 className='text-sm md:text-lg font-medium capitalize text-dark/75 dark:text-light/75'>
                 satisfied clients
@@ -85,7 +85,7 @@ const About = () => {
             </div>
             <div className='flex flex-col items-end justify-center'>
               <span className='inline-block text-2xl md:text-5xl lg:text-7xl font-bold'>
-                <AnimatedNumbers value={2} />+
+                <AnimatedNumbers value={6} />+
               </span>
               <h2 className='text-sm md:text-lg font-medium capitalize text-dark/75 dark:text-light/75'>
                 projects completed
