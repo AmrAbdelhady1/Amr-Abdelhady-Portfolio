@@ -52,10 +52,9 @@ const Education = () => {
                     />
                     <Details
                         type="Online Coursework"
-                        time="2016-2020"
-                        place="Coursera And EdX"
-                        info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
-                        Learning Engineering."
+                        time="2019-pressent"
+                        place="Coursera, Udemy And EdX"
+                        info="Completed coursework in advanced topics such as Web Development, Data Structure and Computer Seience."
                     />
                 </ul>
             </div>

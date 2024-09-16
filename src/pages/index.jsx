@@ -30,10 +30,10 @@ export default function Home() {
             xl:!text-5xl xl:!text-left lg:!text-center lg:!text-6xl md:!text-5xl
           ' />
           <p className='my-4 text-base font-medium'>
-            As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-            Explore my latest projects, showcasing my expertise in React.js and web development.</p>
+            As a skilled frontend developer, I am dedicated to turning ideas into innovative web applications.
+            Explore my latest projects, showcasing my expertise in React.js, Next.js and web development.</p>
           <div className='flex items-center self-center xl:self-start  mt-2'>
-            <Link href={"https://drive.google.com/file/d/1LfmCNPfQn_-cGIYu6FifdHD5cHp5a0E-/view"} download={true} target={"_blank"}
+            <Link href="https://docs.google.com/document/d/1CUK8xmC4n7h5tf3ks9SdBcf6S9KNy6plm1QQYlcaOaI/edit?usp=sharing" download={true} target={"_blank"}
               className='flex items-center bg-dark hover:bg-light text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light
@@ -41,7 +41,7 @@ export default function Home() {
             >
               Resume <LinkArrow className={"w-6 ml-1"} />
             </Link>
-            <Link href={"https://wa.me/201113761670"} target={"_blank"}
+            <Link href={"https://wa.me/+201113761670"} target={"_blank"}
               className='ml-4 underline text-lg font-medium capitalize'
             >
               Contact

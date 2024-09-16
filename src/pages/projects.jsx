@@ -1,18 +1,24 @@
 import React from "react";
+import { useStateContext } from "@/context/statecontext";
+
 import Head from "next/head";
-import Animatedtext from "@/components/animatedtext";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+import { GithubIcon } from "@/components/icons";
+import Animatedtext from "@/components/animatedtext";
+import TransitionEffect from "@/components/transitioneffect";
+
 import ecom from "../../public/images/projects/ecom.png";
-import portfolio from "../../public/images/projects/portfolio.png";
-import booking from "../../public/images/projects/booking.png";
 import meals from "../../public/images/projects/meals.png";
 import atyab from "../../public/images/projects/atyab.png";
+import bright from "../../public/images/projects/bright.png";
+import kokaash from "../../public/images/projects/kokaash.png";
+import booking from "../../public/images/projects/booking.png";
+import cryptic from "../../public/images/projects/cryptic.png";
+import portfolio from "../../public/images/projects/portfolio.png";
 import portfolioLight from "../../public/images/projects/portfolioLight.png";
-import { GithubIcon } from "@/components/icons";
-import { motion } from "framer-motion";
-import TransitionEffect from "@/components/transitioneffect";
-import { useStateContext } from "@/context/statecontext";
 
 const FramerImage = motion(Image);
 
@@ -166,6 +172,36 @@ const Projects = () => {
               img={ecom}
               link="https://ecom.io/"
               github="https://ecom.io/"
+              mode={mode}
+            />
+          </div>
+          <div className="lg:col-span-6">
+            <Project
+              type="Cryptic Website"
+              title="NextJS Crypto Website"
+              img={cryptic}
+              link="https://cryptic-puce.vercel.app/"
+              github="https://github.com/AmrAbdelhady1/cryptic"
+              mode={mode}
+            />
+          </div>
+          <div className="lg:col-span-6">
+            <Project
+              type="Kokassh Website"
+              title="NextJS E-commerce Website"
+              img={kokaash}
+              link="https://kokaash.vercel.app/"
+              github="https://github.com/AmrAbdelhady1/kokaash"
+              mode={mode}
+            />
+          </div>
+          <div className="lg:col-span-6">
+            <Project
+              type="Bright Website"
+              title="Native Website"
+              img={bright}
+              link="https://bright-seven.vercel.app/"
+              github="https://github.com/AmrAbdelhady1/bright"
               mode={mode}
             />
           </div>
