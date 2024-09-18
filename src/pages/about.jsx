@@ -51,7 +51,7 @@ const About = () => {
             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
             <p>
               Hi, I'm <span className='font-bold'>Amr Abdelhady</span>, a web developer with a passion for creating beautiful, functional,
-              and user-centered digital experiences. With 2+ years of experience in the field. I am always looking for
+              and user-centered digital experiences. With 3+ years of experience in the field. I am always looking for
               new and innovative ways to bring my clients' visions to life.
             </p>
             <p className='my-4'>
@@ -93,7 +93,7 @@ const About = () => {
             </div>
             <div className='flex flex-col items-end justify-center'>
               <span className='inline-block text-2xl md:text-5xl lg:text-7xl font-bold'>
-                <AnimatedNumbers value={2} />+
+                <AnimatedNumbers value={3} />+
               </span>
               <h2 className='text-sm md:text-lg font-medium capitalize text-dark/75 dark:text-light/75'>
                 years of experience
