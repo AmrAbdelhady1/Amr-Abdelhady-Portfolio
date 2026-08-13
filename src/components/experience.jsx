@@ -58,50 +58,20 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-3 md:ml-16">
           <Details
-            position="Frontend Developer"
-            company="Auto Beam"
-            time="2024-Present"
-            address="Remote"
-            work="Enhance their up and running Apps, add new features and design new pages.
-Work with designers for UI/UX.
-Coordinate with backend devs for seamless integration.
-Improve code performance and compatibility.
-Review code, mentor juniors, and ensure best practices.
-"
-          />
-          <Details
-            position="Frontend Developer"
-            company="SamValley"
-            time="2024-Present"
-            address="Remote"
-            work="Develop user-facing features using React.js and Next.js, Work closely with the design team to implement elegant user interfaces, Utilize RESTful and GraphQL APIs for seamless data integration, Collaborate with backend developers to improve usability and performance of applications, Ensure the technical feasibility of UI/UX designs, Optimize applications for maximum speed and scalability
-"
+            position="Senior Frontend Developer"
+            company="Gradion | MENA"
+            companyLink="https://www.nfq.com/"
+            time="2025-Present"
+            address="Cairo, Egypt"
+            work="Architected key modules for Laioutr, a modular e-commerce platform, using React, Next.js, Vue, and Nuxt. Built a headless Drupal + Next.js stack for Maalpedia, and shipped 100/100 Lighthouse scores through SSR and code-splitting. Standardized UI with Tailwind, ShadCN, and TypeScript while mentoring junior engineers."
           />
           <Details
             position="Frontend Developer"
             company="CryptDev"
             companyLink="https://cryptdev.com/"
-            time="2023-2024"
+            time="2022-2025"
             address="Remote"
-            work="working on a big e-commerce platform in Kuwait, making two dashboard super for our client and admin
-                        dashboard for his customers and the admin makes his own store and starts selling with dynamic themes for
-                        every admin."
-          />
-          <Details
-            position="Frontend Developer Intern"
-            company="Vekelz"
-            companyLink="https://www.vekelz.com/"
-            time="2022-2023"
-            address="Remote"
-            work="Worked on a team responsible for developing a new mobile app and new website for Vekelz using ReactJS and NextJS,
-                        learned how to use ReactNative and worked on there new apps."
-          />
-          <Details
-            position="Java And Web Developer"
-            company="Military Service"
-            time="2022-2022"
-            address="On Site"
-            work="Developed Java desktop App using JSwing for UI interfaces for user experience, Developed a form using native JavaScript Html and CSS and Integrate it with a PHP backend server."
+            work="Built dual admin dashboards and a multi-tenant merchant ecosystem for Ecom Payments across Kuwait. Shipped food-ordering and storefronts (Atyab Al Marshoud), plus AI dashboards for Eloquent in Qatar and enterprise sites like Vallix in KSA. Managed complex state with Redux Toolkit, Zustand, and React Query, using React Hook Form and Zod for validation."
           />
         </ul>
       </div>

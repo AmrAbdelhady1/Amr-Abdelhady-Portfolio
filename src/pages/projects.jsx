@@ -14,10 +14,14 @@ import ecom from "../../public/images/projects/ecom.png";
 import meals from "../../public/images/projects/meals.png";
 import atyab from "../../public/images/projects/atyab.png";
 import bright from "../../public/images/projects/bright.png";
+import vallix from "../../public/images/projects/vallix.png";
 import kokaash from "../../public/images/projects/kokaash.png";
 import booking from "../../public/images/projects/booking.png";
 import cryptic from "../../public/images/projects/cryptic.png";
+import laioutr from "../../public/images/projects/laioutr.png";
+import eloquent from "../../public/images/projects/eloquent.png";
 import portfolio from "../../public/images/projects/portfolio.png";
+import maalpedia from "../../public/images/projects/maalpedia.png";
 import portfolioLight from "../../public/images/projects/portfolioLight.png";
 
 const FramerImage = motion(Image);
@@ -154,21 +158,59 @@ const Projects = () => {
         <div className="grid lg:grid-cols-12 grid-cols-1 gap-24 gap-y-32 mt-20">
           <div className="lg:col-span-12 hidden lg:inline-block">
             <FeatureProject
-              type="E-commerce Platform"
-              title="Ecom Store"
-              summary="working on a big e-commerce platform in Kuwait, making two dashboard super for our client and admin
-              dashboard for his customers and the admin makes his own store and starts selling with dynamic themes for
-              every admin."
-              img={ecom}
-              link="https://ecom.io/"
-              github="https://ecom.io/"
+              type="Laioutr"
+              title="Laioutr | E-Commerce Platform"
+              summary="Built a modular, high-performance Shopify-like platform for a German client, achieving 100/100 Lighthouse performance and accessibility scores."
+              img={laioutr}
+              link="https://www.laioutr.com/"
+              github="#"
               mode={mode}
             />
           </div>
           <div className="lg:col-span-12 lg:hidden">
             <Project
-              type="E-commerce Platform"
-              title="Ecom Store"
+              type="Laioutr"
+              title="Laioutr | E-Commerce Platform"
+              img={laioutr}
+              link="https://www.laioutr.com/"
+              github="#"
+              mode={mode}
+            />
+          </div>
+          <div className="lg:col-span-6">
+            <Project
+              type="Maalpedia"
+              title="Maalpedia Investment Portal "
+              img={maalpedia}
+              link="https://maalpedia.com/"
+              github="#"
+              mode={mode}
+            />
+          </div>
+          <div className="lg:col-span-6">
+            <Project
+              type="Eloquent"
+              title="Eloquent AI Platform"
+              img={eloquent}
+              link="https://elqnt.ai/en/home"
+              github="#"
+              mode={mode}
+            />
+          </div>
+          <div className="lg:col-span-6">
+            <Project
+              type="Vallix"
+              title="Vallix Enterprise Portal"
+              img={vallix}
+              link="https://vallix.co/en"
+              github="#"
+              mode={mode}
+            />
+          </div>
+          <div className="lg:col-span-6">
+            <Project
+              type="Ecom Payments"
+              title="Ecom Payments & Merchant Portal "
               img={ecom}
               link="https://ecom.io/"
               github="https://ecom.io/"
